@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Increment/Decrement Operators</h1>
+    <p>
+      a. Increment Operator (++): Increments the value of a variable by 1.
+      <br />
+      b. Decrement Operator (--): Decrements the value of a variable by 1.
+      <br />
+    </p>
+    <p>
+      <b>Types of increment/decrement operators</b>
+      1. Preincrement / Predecrement operator <br />
+      2. Postincrement / Postdecrement operator
+    </p>
+    <p>
+      <b>Working of Preincrement/Preincrement Operators</b>
+      1. Update the current value by 1 <br />
+      2. Assign the updated value <br />
+      3. Access the updated value
+    </p>
+    <p>
+      <b>Working of Postincrement/Postdecrement operators</b>
+      1. Assign the current value <br />
+      2. Update the current value by 1 <br />
+      3. Access the updated value
+    </p>
+
+    <script>
+      // Preincrement operator
+      let a = 5;
+      document.write("Before increment: ", a + "<br>");
+      document.write("After increment: ", ++a + "<br>");
+      let x = 7;
+      document.write("Before decrement: ", x + "<br>");
+      document.write("After decrement: ", --x + "<br>");
+      document.write(
+        "-------------Increment/Decrement with assignment-------------------" +
+          "<br>"
+      );
+      let b = 10;
+      let c = --b;
+      document.write("Value of b: ", b + "<br>");
+      document.write("Value of c: ", c + "<br>");
+      let d = --b + --c + --b;
+      document.write("Value of d: ", d + "<br>");
+      let e = 15;
+      let f = (++b + ++d) * ++e;
+      document.write("Value of e: ", e + "<br>");
+      document.write("Value of f: ", f + "<br>");
+
+      document.write("--------------------------------------------<br>");
+      document.write("Post increment/ Decrement" + "<br>");
+      let num1 = 100;
+      let num2 = num1++;
+      document.write("Value of num1: ", num1 + "<br>");
+      document.write("Value of num2: ", num2 + "<br>");
+      let num3 = 500;
+      document.write(num3++ + "<br>");
+      document.write(num3 + "<br>");
+
+      let val1 = 120;
+      let val2 = val1++;
+      document.write("Value of val1: ", val1 + "<br>");
+      document.write("Value of val2: ", val2 + "<br>");
+      let val3 = val1++ + val2++ - val1++;
+      document.write("Value of val3: ", val3 + "<br>");
+    </script>
+  </body>
+</html>

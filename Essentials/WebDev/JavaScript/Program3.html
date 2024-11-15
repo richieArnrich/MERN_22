@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Datatypes in JavaScript</h1>
+    <p>
+      1. Datatypes specify what kind of values are stored in the variables
+      <br />
+      2. Datatypes are used to define the type of data that a variable can hold
+      <br />
+      3. JavaScript is a dynamically typed language i.e the datatype of the
+      variable depends on the value stored in it <br />
+      <b>We can store the following types of data in JavaScript variables</b>
+      <br />
+      a. String <br />b. Number <br />c. Boolean <br />
+      d. Null<br />
+      e. Undefined<br />
+      f. Object <br />
+    </p>
+
+    <script>
+      let myName = "Rakshit";
+      document.write(typeof myName + "<br>");
+      myName = 100;
+      document.write(typeof myName + "<br>");
+      let myBool = true;
+      document.write(typeof myBool + "<br>");
+      let myNull = null;
+      document.write(typeof myNull + "<br>");
+      let myUndefined = undefined;
+      document.write(typeof myUndefined + "<br>");
+      let myObj = {
+        name: "Rakshit",
+        age: 20,
+        contact: 123456677,
+      };
+      document.write(typeof myObj + "<br>");
+      document.write(myObj.name + "<br>");
+      document.write(myObj.age + "<br>");
+
+      let mySum = 1 + "1";
+      document.write(mySum + "<br>");
+      let mySub = 1 - "1";
+      document.write(mySub + "<br>");
+    </script>
+  </body>
+</html>

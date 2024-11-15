@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Variables is JavaScript</h1>
+    <p>
+      A variable is used to store data <br />
+      Variables are declared using three keywords let, const, var <br />
+      1. let variables: These variables can have reassigned values but cannot be
+      redeclared <br />
+      2. const variables: These variables cannot be reassigned or redeclared.
+      The values once assigned remains constant throughout the program
+      <br />
+      3. var variables: These variables can be reassigned and redeclared
+    </p>
+
+    <script>
+      // let variables
+      // internal scripting : use script tag
+      let name = "Richie";
+      document.write(name + "<br>"); //prints the output on the html document
+      console.log(name); // prints the output on the console of the browser. Used for testing
+      alert(name); //prints the data in a dialogue box
+
+      name = "Shankar";
+      document.write(name + "<br/>"); //prints the output on the html document
+      //   let name = "John"; doesnt work as redeclaring of let variables is not possible
+      //   ------------------------------
+      // const variables
+      const age = 25;
+      document.write(age + "<br/>");
+      //   age = 30;
+      //   document.write(age + "<br>"); cannot update const variable values
+      //   var variables
+      var country = "India";
+      document.write(country + "<br/>");
+      country = "USA";
+      document.write(country + "<br/>");
+      var country = "South Africa";
+      document.write(country + "<br/>");
+      //   var keywords are not used most of the times because of its behaviour
+      //   of redeclaration
+    </script>
+  </body>
+</html>
