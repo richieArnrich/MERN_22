@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Do while loop</h1>
+    <script>
+      /*
+            Syntax:
+            initialisation
+            do{
+                statements to execute
+                update
+            }while(condition);
+
+            Working
+            1. The initialisation statement is executed first.
+            2. The loop statements are executed
+            3. The update statement is executed
+            4. The condition is checked , if condition is true
+            5. The loop statements are executed again
+        */
+
+      let i = 1;
+      do {
+        document.write(i + "<br>");
+        i++;
+      } while (i <= 5);
+
+      let j = 1;
+      do {
+        document.write(j + "<br>");
+        j++;
+      } while (j == 0);
+
+      while (j == 0) {
+        document.write(j);
+        j++;
+      }
+      //   while loop will not execute even once when the condition is false for the first
+      //   iteration
+      //   do-while loop will execute atleast once
+    </script>
+  </body>
+</html>
