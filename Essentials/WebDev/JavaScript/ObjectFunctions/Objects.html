@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Objects in javascript</h1>
+    <p>
+      1. Objects are variables that store more than one value <br />
+      2. Objects are used to store data in key-value pairs <br />
+      3. Objects are mutable, meaning they can be changed after they are created
+      <br />
+      4. We use dot notation (.) or [] notation to access values inside the
+      object<br />
+      5. We use for... in loop to iterate through objects
+    </p>
+    <div>-----------------------------------------------------</div>
+    <script>
+      let sachin = {
+        name: "Sachin Tendulkar",
+        age: 45,
+        country: "India",
+        city: "Mumbai",
+        occupation: "Cricketer",
+      };
+
+      document.write("Name = " + sachin.name + "<br>");
+      document.write(`Name is ${sachin.name} and age is ${sachin.age} <br>`);
+      document.write(
+        `Country is ${sachin["country"]} and city is ${sachin["city"]} <br>`
+      );
+
+      for (let key in sachin) {
+        document.write(`${key} = ${sachin[key]} <br>`);
+      }
+    </script>
+  </body>
+</html>
