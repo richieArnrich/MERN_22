@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Function in an object</h1>
+    <script>
+      // Define an object
+      let person = {
+        firstName: "Sachin",
+        lastName: "Tendulkar",
+        age: 45,
+        occupation: {
+          job: "Cricketer",
+          yearsOfExperience: 20,
+          country: "India",
+        },
+      };
+      document.write(
+        `Name is ${person.firstName} and job is ${person.occupation.job}<br>`
+      );
+
+      //   function in an object
+      let person2 = {
+        Name: "Rahul Dravid",
+        age: 45,
+        occupation: {
+          job: "Cricketer",
+          yearsOfExperience: 20,
+          country: "India",
+        },
+        displayDetails: function () {
+          document.write("Name is : " + this.Name + "<br>");
+          document.write("age is : " + this.age + "<br>");
+          document.write("job is : " + this.occupation.job + "<br>");
+          document.write(
+            "exp is : " + this.occupation.yearsOfExperience + "<br>"
+          );
+          document.write("country is : " + this.occupation.country + "<br>");
+        },
+      };
+      person2.displayDetails();
+    </script>
+  </body>
+</html>

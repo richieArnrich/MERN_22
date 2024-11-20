@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Types of functions</h1>
+    <div>
+      <ol>
+        <li>Function declaration</li>
+        <li>Anonymous Functions</li>
+        <li>Arrow Functions</li>
+      </ol>
+    </div>
+
+    <script>
+      // Function Declaration
+      function add(a, b) {
+        let r = a + b;
+        document.write(r);
+      }
+      add(5, 7);
+
+      //   Anonymous Functions
+      let add1 = function (a, b) {
+        let r = a + b;
+        document.write(r);
+      };
+      add1(5, 7);
+      //   arrow function
+      let add2 = (a, b) => {
+        // body
+        let r = a + b;
+        document.write(r);
+      };
+      add2(5, 7);
+    </script>
+  </body>
+</html>
